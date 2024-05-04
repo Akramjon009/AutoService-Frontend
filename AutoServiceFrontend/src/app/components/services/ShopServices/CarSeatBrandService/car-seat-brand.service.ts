@@ -18,28 +18,28 @@ export class CarSeatBrandService {
 
   Create(date: CreateCarSeatBrand) {
     return this.http.post<ResponceModel>(
-      this.apiUrl + `CreateServiceCategory`,
+      this.apiUrl + `CreateCarSeatBrend`,
       date
     );
   }
 
   update(date: UpdateCarSeatBrand) {
     return this.http.put<ResponceModel>(
-      this.apiUrl + `UpdateServiceCategory`,
+      this.apiUrl + `UpdateCarSeatBrand`,
       date
     );
   }
 
   delete(date: DeleteCarSeatBrand) {
     return this.http.delete<ResponceModel>(
-      this.apiUrl + `DeleteServiceCategory?id=${date}`
+      this.apiUrl + `DeleteCarSeatBrand?id=${date}`
     );
   }
 
   getAll(date: GetAll) {
     return this.http.get<CarSeatBrandModel[]>(
       this.apiUrl +
-        `GetAllServiceCategory?PageIndex=${date.PageIndex}Size=${date.Size}`
+        `GetAllCarSeatBrand?PageIndex=${date.PageIndex}Size=${date.Size}`
     );
   }
 }

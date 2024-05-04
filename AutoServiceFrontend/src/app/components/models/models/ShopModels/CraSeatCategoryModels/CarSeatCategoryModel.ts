@@ -1,1 +1,4 @@
-https://github.com/Akramjon009/AutoService-Frontend.githttps://github.com/Akramjon009/AutoService-Frontend.git
+export interface CarSeatCategoryModel {
+  endAge: number;
+  startAge: number;
+}
